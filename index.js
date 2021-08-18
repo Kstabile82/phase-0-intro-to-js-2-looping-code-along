@@ -1,21 +1,15 @@
-// Code your solutions in this file
-function writeCards (names) {
+
+function writeCards(stringArr, event) {
     let returnArr = []; 
-    for (let i = 0; i < names.length; i++) {
-        let message = `Thank you, ${names[i]}, for the wonderful surprise gift!`; 
-        returnArr.push(message); 
+    for (let i = 0; i < stringArr.length; i++) {
+        let result = `Thank you, ${stringArr[i]}, for the wonderful ${event} gift!`; 
+        returnArr.push(result); 
     }
-    console.log(returnArr); 
-    debugger;
+    return returnArr; 
 }
-writeCards([ 'Lisa', 'Kaitlin', 'Jan' ]); 
-
-  function countDown (num) {
-    while (num >= 0) {
-        console.log(num); 
-        debugger;
-        num--; 
+function countDown(int) {
+    while (int >= 0) {
+        console.log(int); 
+        int--; 
     }
 }
-countDown(10); 
-
